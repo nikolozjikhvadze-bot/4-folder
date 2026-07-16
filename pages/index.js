@@ -1,3 +1,6 @@
+import Head from "next/head";
+
+
 import { getFeaturedEvents } from "../helpers/api-utli";
 import EventList from "../components/events/event-list";
 
@@ -6,6 +9,10 @@ function HomePage(props) {
 
     return (
         <div>
+            <Head>
+                <title>Next Js Events</title>
+                <meta name="description" content="find a lot of great events that allow you to evolve"></meta>
+            </Head>
             <EventList items={props.events}/>
         </div>
     );
