@@ -6,6 +6,8 @@ function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <Head>
+        <title>Next Events</title>
+        <meta name='description' content='NextJs Events' />
         <meta name='viewport' content='initila-scale=1.0, width=device-width' />
       </Head>
       <Component {...pageProps} />
